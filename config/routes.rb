@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  # NOTE: Omitting the /api/v1/ convention
+  # as not needed for this simple app
+  post 'messages/:type' => 'messages#create'
 end
